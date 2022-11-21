@@ -1,28 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head> <!--Machine Code-->
     <meta charset="UTF-8">
     <title>✨My portfolio - Othman Adi✨</title>
     <link rel="stylesheet" href="/styles/style.css">
+    <script src="/backend/scripts.js"></script>
 </head>
-<body>
 
+<body>
 <div class="body">
     <div class="el NavBar">
         <div class="Brand">
-            <h1>Adi</h1>
+            <h1>
+                <a href="index.html">Adi</a>
+            </h1>
         </div>
 
         <div class="pagesList">
             <ul>
                 <li>
-                    <a href="#">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
+
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="Contact.html">Contact</a>
                 </li>
+
                 <li>
-                    <a href="#">Prices</a>
+                    <a href="Prices.html">Prices</a>
                 </li>
             </ul>
         </div>
@@ -37,7 +42,22 @@
     </div>
 
     <div class="el PageContent">
-        <p>PageContent</p>
+        <div class="pageTitle">
+            <h2>✨ Try out this simple TodoList! ✨</h2>
+        </div>
+
+        <!--    TodoList Control    -->
+        <div class="controls">
+            <button class="addTodo" onclick="AddTodo2List()">Add New Todo..✏️</button>
+        </div>
+        <!--    TodoList Body    -->
+        <div class="bodyOfTodoList">
+            <input type="button" class="todoInputField">
+
+            <ul class="myUL">
+                <li>Example Todo!</li>
+            </ul>
+        </div>
     </div>
 
     <div class="el Footer">
