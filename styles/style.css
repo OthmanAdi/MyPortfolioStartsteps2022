@@ -39,8 +39,49 @@
     grid-row: 2 / span 10;
 }
 
-.PageContent{
+.PageContent {
     background-color: ghostwhite;
     grid-column: 3 / span 8;
     grid-row: 2 / span 10;
+}
+
+.NavBar {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagesList ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-right: 10px;
+}
+
+.Brand{
+    padding-left: 10px;
+}
+
+.PageContent{
+    background: radial-gradient(circle at top, #DEBACE,#FEBE8C,#F49D1A, transparent),
+    radial-gradient(circle at left, #6C4AB6,#8D9EFF,#B9E0FF, transparent);
+
+    background-size: 400% 400%;
+    animation: AnimatedBG 12s ease-in-out infinite;
+}
+
+@-webkit-keyframes AnimatedBG {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+         background-position: 100% 100%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
 }
